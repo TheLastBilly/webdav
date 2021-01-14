@@ -1,0 +1,10 @@
+version: "2"
+
+services:
+    radicale:
+        image: thelastbilly/webdav
+        build: .
+        volumes: 
+            - "./data:/data"
+        ports:
+            - "5232:80"
